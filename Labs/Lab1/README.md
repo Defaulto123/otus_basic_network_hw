@@ -537,13 +537,13 @@ conf t
 no ip domain-lookup
 hostname S1
 service password-encryption
-enable secret class
+enable secret class - это защита доступа в конфиг
 banner motd #
 Unauthorized access is strictly prohibited. #
-line con 0
+line con 0 - защита консоли
 logging synchronous 
 exit
-line vty 0 4
+line vty 0 4 - защита линии
 password cisco
 login
 exit
