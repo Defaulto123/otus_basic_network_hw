@@ -728,6 +728,7 @@ end - выход из режима конфигурации в привилег�
 
 ### Сейчас настроен только Telnet (по умолчанию). Для SSH нужно ещё:
 ip domain-name example.com
+ip ssh version 2
 crypto key generate rsa modulus 1024
 line vty 0 4
 transport input all
@@ -743,6 +744,7 @@ clock timezone MSK 3
 service password-encryption
 enable secret class
 ip domain-name home.local
+ip ssh version 2
 crypto key generate rsa
 1024
 banner motd #

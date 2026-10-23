@@ -454,6 +454,7 @@ end - выход из режима конфигурации в привилег�
 ### Сейчас настроен только Telnet (по умолчанию). Для SSH нужно ещё:
 ip domain-name example.com
 crypto key generate rsa modulus 1024
+ip ssh version 2
 line vty 0 4
 transport input ssh
 username admin privilege 15 secret <пароль>

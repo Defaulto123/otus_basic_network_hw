@@ -666,6 +666,7 @@ clock timezone MSK 3
 service password-encryption
 enable secret class
 ip domain-name home.local
+ip ssh version 2
 crypto key generate rsa
 1024
 banner motd #
